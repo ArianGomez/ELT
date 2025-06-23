@@ -1,0 +1,106 @@
+/* --------------------------
+   SECCIÓN DE REGISTRO COMO FONDO
+   -------------------------- */
+.registro-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("Img/Registro.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Form no en el centro exacto sino a la derecha */
+}
+
+/* Overlay con título */
+.registro-overlay {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  z-index: 1;
+}
+.registro-overlay h1 { 
+  font-size: 2.5rem; 
+  margin: 0; 
+}
+.registro-overlay p  { 
+  font-size: 1.1rem; 
+  margin-top: 8px; 
+  opacity: .9; 
+}
+
+/* Contenedor del form */
+.registro-container {
+  position: relative;
+  z-index: 2;
+  flex: none;
+  width: 400px;        
+  margin: 0 120px 0 0;  /* Se separa 120px del borde derecho */
+}
+
+/* Caja del formulario */
+.registro-form {
+  background: rgba(0,0,0,0.75);
+  padding: 35px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.registro-form h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+}
+
+/* Campos generales */
+.form-group {
+  margin-bottom: 18px;
+}
+.registro-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: .95rem;
+}
+.registro-form input,
+.registro-form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: .95rem;
+  background: #fff;
+  color: #333;
+}
+
+/* Checkbox de términos */
+.registro-form .terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;        /* separa del botón */
+}
+.registro-form .terms input {
+  margin: 0;                  /* elimina margen derecho extra */
+  transform: scale(1.1);
+}
+.registro-form .terms label {
+  margin: (0 , 0 , 0 );          /* espacio entre checkbox y texto */
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Botón */
+.registro-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background: #414448;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+.registro-form button:hover {
+  background: #bd2727;
+}
+
